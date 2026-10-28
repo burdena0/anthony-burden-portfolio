@@ -1,0 +1,36 @@
+# Cloudflare deployment
+
+The static build is ready for a future deployment. No Cloudflare project or domain has been created.
+
+## Cloudflare Pages
+
+Connect this source repository or upload the built `dist/` directory.
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | None |
+| Production branch | main |
+| Build command | node build.mjs |
+| Build output directory | dist |
+| Root directory | repository root |
+
+Optional build environment variable: `SITE_URL`, set to the final HTTPS origin. This adds canonical URLs, social URL metadata, and a sitemap. The site works without it.
+
+For Direct Upload, build locally, then upload the files inside `dist/` or the provided website ZIP. The archive root must contain `index.html` and `assets/`.
+
+## Cloudflare Workers static assets
+
+The included `wrangler.jsonc` points to `dist/`. After building, authenticate the Cloudflare CLI and deploy when ready:
+
+```sh
+node build.mjs
+npx wrangler deploy
+```
+
+This command publishes the site. It has not been run as part of preparation.
+
+## Verification after publishing
+
+Open the homepage and all four project routes. Confirm the recording plays and the resume downloads. Unknown routes should show the provided 404 page.
+
+References: [Cloudflare static HTML](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/) and [Workers static assets](https://developers.cloudflare.com/workers/static-assets/).

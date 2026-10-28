@@ -1,5 +1,7 @@
 node_modules/
 tmp/
 qa/
+outputs/
+.wrangler/
 .DS_Store
 Thumbs.db
