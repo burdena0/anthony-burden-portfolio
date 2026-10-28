@@ -13,7 +13,7 @@ python -m http.server 4173 --directory dist
 
 Edit project details in `projects.mjs`, the homepage in `build.mjs`, and styling in `dist/styles.css`. Media and the resume live in `dist/assets/`.
 
-The site uses static HTML, CSS, and system fonts. It has no browser JavaScript or external runtime dependencies. Pushes to `main` build and deploy through GitHub Pages.
+The site uses static HTML and CSS, with Google Fonts and local font fallbacks. It has no browser JavaScript or external runtime dependencies. Pushes to `main` build and deploy through GitHub Pages.
 
 ## Project media
 
