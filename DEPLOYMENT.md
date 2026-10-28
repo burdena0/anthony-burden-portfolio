@@ -1,10 +1,12 @@
 # Cloudflare deployment
 
-The static build is ready for a future deployment. No Cloudflare project or domain has been created.
+The portfolio is published at https://anthony-burden-portfolio.pages.dev/ using the Cloudflare Pages project `anthony-burden-portfolio` and Direct Upload. Production branch: `main`. GitHub Pages is disabled.
+
+Set `SITE_URL=https://anthony-burden-portfolio.pages.dev` when rebuilding the published version. Upload the complete contents of `dist/`, including the resume and project media. Direct Upload does not automatically publish GitHub pushes.
 
 ## Cloudflare Pages
 
-Connect this source repository or upload the built `dist/` directory.
+The current project uses Direct Upload. The settings below also describe a future Git-connected project if desired.
 
 | Setting | Value |
 | --- | --- |

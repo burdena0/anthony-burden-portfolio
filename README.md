@@ -2,6 +2,8 @@
 
 Personal engineering portfolio for projects in robotics, computer vision, and embedded systems.
 
+[View portfolio](https://anthony-burden-portfolio.pages.dev/)
+
 ## Local development
 
 ```sh
@@ -10,7 +12,7 @@ node scripts/check-site.mjs
 python -m http.server 4173 --directory dist
 ```
 
-The site is static HTML and CSS. It uses system fonts and has no runtime dependencies. No automatic hosting deployment is configured. The repository workflow builds the site and checks internal links only.
+The site is static HTML and CSS. It uses system fonts and has no runtime dependencies. It is hosted on Cloudflare Pages through Direct Upload. The repository workflow builds the site and checks internal links only.
 
 ## Source structure
 
