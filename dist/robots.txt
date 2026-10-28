@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://anthony-burden-portfolio.pages.dev/sitemap.xml
+Sitemap: https://burdena.net/sitemap.xml

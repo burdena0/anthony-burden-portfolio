@@ -4,7 +4,7 @@ import { layout } from './templates/layout.mjs';
 import { homePage } from './templates/home.mjs';
 import { projectPage } from './templates/project.mjs';
 
-const siteUrl = process.env.SITE_URL?.replace(/\/+$/, '') || '';
+const siteUrl = (process.env.SITE_URL ?? 'https://burdena.net').replace(/\/+$/, '');
 if (siteUrl && !/^https?:\/\//.test(siteUrl)) throw new Error('SITE_URL must be an absolute http(s) URL.');
 await mkdir('dist/projects', { recursive: true });
 await writeFile('dist/index.html', layout({ title: 'Anthony Burden — Robotics & computer vision', description: 'Computer engineering at RIT. Projects in robot perception, camera tracking, and embedded systems.', body: homePage(projects), siteUrl, active: 'overview' }));

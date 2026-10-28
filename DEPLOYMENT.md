@@ -1,8 +1,8 @@
 # Cloudflare deployment
 
-The portfolio is published at https://anthony-burden-portfolio.pages.dev/ using the Cloudflare Pages project `anthony-burden-portfolio` and Direct Upload. Production branch: `main`. GitHub Pages is disabled.
+The portfolio is published at https://burdena.net/ using the Cloudflare Pages project `anthony-burden-portfolio` and Direct Upload. The domain is registered with Cloudflare and its apex CNAME points to `anthony-burden-portfolio.pages.dev`. Production branch: `main`. GitHub Pages is disabled.
 
-Set `SITE_URL=https://anthony-burden-portfolio.pages.dev` when rebuilding the published version. Upload the complete contents of `dist/`, including the resume and project media. Direct Upload does not automatically publish GitHub pushes.
+The build defaults to `SITE_URL=https://burdena.net`. Upload the complete contents of `dist/`, including the resume and project media. Direct Upload does not automatically publish GitHub pushes.
 
 ## Cloudflare Pages
 

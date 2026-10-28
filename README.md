@@ -2,7 +2,7 @@
 
 Personal engineering portfolio for projects in robotics, computer vision, and embedded systems.
 
-[View portfolio](https://anthony-burden-portfolio.pages.dev/)
+[View portfolio](https://burdena.net/)
 
 ## Local development
 
@@ -23,7 +23,7 @@ The site is static HTML and CSS. It uses system fonts and has no runtime depende
 - `dist/styles.css`: responsive layout and design tokens.
 - `dist/assets/`: original project media and the supplied resume.
 
-Run the build after editing the templates or project data. Set `SITE_URL` to the final site origin at build time to generate canonical metadata and a sitemap. Without it, the output stays independent of any host or domain.
+Run the build after editing the templates or project data. Canonical metadata and the sitemap use `https://burdena.net` by default. Set `SITE_URL` to override the origin, or to an empty string for a build without canonical URLs.
 
 ## Cloudflare
 
